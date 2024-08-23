@@ -1,0 +1,36 @@
+POST /api/1.0/otp/send HTTP/1.1
+Host: portal.bulkgate.com
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "application_id": "APPLICATION_ID",
+  "application_token": "APPLICATION_TOKEN",
+  "number": "3435482729",
+  "country": "ca",
+  "language": "en",
+  "code_type": "uber",
+  "code_length": ,
+  "request_quota_number": 1,
+  "request_quota_identification": "127.0.0.1",
+  "trials_available_resend": 2,
+  "trials_available_verification": 5,
+  "daily_limit": 100,
+  "daily_limit_country": ['cz' => 150, 'sk' => 50],
+  "expiration": 3600,
+  "channel": {
+    "rcs": {
+      "sender": "Lt. Hagan",
+      "expiration": 100
+    },
+    "viber": {
+      "sender": "Lt. Hagan",
+      "expiration": 100
+    },
+    "sms": {
+      "sender_id": "gText",
+      "sender_id_value": "Lt-Hagan",
+      "unicode": true
+    }
+  }
+}
