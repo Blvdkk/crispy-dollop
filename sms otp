@@ -10,7 +10,7 @@ Cache-Control: no-cache
   "country": "ca",
   "language": "en",
   "code_type": "uber",
-  "code_length": ,
+  "code_length":6,
   "request_quota_number": 1,
   "request_quota_identification": "127.0.0.1",
   "trials_available_resend": 2,
